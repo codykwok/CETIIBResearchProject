@@ -30,14 +30,14 @@ for runnumber = 11:11 % Input run number between 11-19, can input multiple or in
     runnumber = num2str(runnumber);
     
     % Batch calculations timings 
-    batstart = [4548,4323.23,4530.43];
-    batend = [12020.8,11448.4,11676.1];
+    batstart = [4548,4323.23,4530.43,4538.43,4526.81,4557.27,4539.69,4545.72,4522.63];
+    batend = [12020.8,11448.4,11676.1,11890.8,12068.2,12028.6,11886,11966.4,11923.8];
     
     % Import the data
     datatable = readtable(strcat('H:\CET IIB RP\Data\','Run',runnumber,'.csv'), opts);
     dataarray = table2array(datatable);
     load('H:\CET IIB RP\kback.mat','kback')
-    cuwater = [2.769-0.509,2.503-0.286,2.858-0.700];
+    cuwater = [2.26,2.217,2.158,2.189,2.208,2.374,2.275,2.149,2.31];
     
     % Clear temporary variables
     clear opts
